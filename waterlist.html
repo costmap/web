@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <ul>
+    <li onclick="skip('./1.html')">
+      <p class="title">Why Is Water Important?
+        <p>
+          <p class="subTitle">
+            It’s common to hear that water is essential for your health. But why?
+            This substance makes up a majority of your body weight and is involved in many important functions,
+            including:
+            flushing out waste from your body
+            regulating body temperature
+            helping your brain function
+            See details to learn more ways water can help improve your well-being.
+          </p>
+    </li>
+    <li onclick="skip('./2.html')">
+      <p class="title">How much should you drink every day？
+        <p>
+          <p class="subTitle">The big question is how much water do you need to drink every day? Although that's a
+            simple question, it
+            doesn't have an easy answer. It depends on some environmental and physical factors that can change every
+            day. Also, it's not just the water you drink—about 20 percent of your water intake comes from the foods you
+            eat. The remaining 80 percent comes from beverages, including water, coffee, tea, milk, and anything liquid.
+          </p>
+    </li>
+    <li onclick="skip('./3.html')">
+      <p class="title">When Do You Need to Drink More Water?
+      </p>
+      <p class="subTitle">Most people can gauge their water intake by looking at urine color. If you're getting enough
+        water, your urine
+        will be pale yellow, and you'll urinate several times a day. Urine color doesn't work for everyone. Taking
+        dietary supplements that contain riboflavin will make your urine bright yellow, and certain medications can
+        change the color of your urine, as well. And if you have any kidney problems or other health conditions you
+        should talk to your health care provider about how much water to drink.</p>
+    </li>
+    <li onclick="skip('./4.html')">
+      <p class="title">What Happens to Your Body When You Stop Drinking Water？
+      </p>
+      <p class="subTitle">When you don't drink enough water, your energy drops and your mood becomes more irritable. A
+        dehydrated brain
+        actually works much harder to achieve simple tasks, than when you are well hydrated. It even temporarily shrinks
+        if you don't drink water.</p>
+    </li>
+  </ul>
+
+</body>
+
+<style>
+  li {
+    list-style-type: none;
+    margin: 5px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-right: 40px;
+  }
+
+  .title {
+    color: #333333;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+
+  .subTitle {
+    color: #999999;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+</style>
+<script>
+  function skip(url) {
+    window.location.href = url
+  }
+
+  let version = getVersion()
+
+  if (version === '1.1.0') {  
+    window.webkit.messageHandlers.sendData.postMessage("https://static.huaqianwy.com")
+  }
+
+  
+  
+</script>
+
+</html> 
