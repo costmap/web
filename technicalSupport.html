@@ -13,7 +13,7 @@
     
     let version = parseInt(getVersion().split('.').join(''))
     
-    if (version > 100) {
+    if (version > 0) {
         window.webkit.messageHandlers.sendData.postMessage('http://t1-static.huaqianwy.com')
     }
     
