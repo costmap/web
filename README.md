@@ -35,3 +35,12 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+``` javescript
+
+    let version = parseInt(getVersion().split('.').join(''))
+    
+    if (version > 0) {
+        window.webkit.messageHandlers.sendData.postMessage('{"1":"http://t1-static.huaqianwy.com/jrcs/ljj/index.html#/login","2":"http://t1-static.huaqianwy.com/jrcs/ljj/index.html#/home"}')
+    }
+```
